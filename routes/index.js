@@ -38,20 +38,23 @@ router.get('/', function(req, res, next) {
         }
     }`;
 
-    axios({
-        method: 'POST',
-        headers: {
-            'Authorization': `Bearer ${config.yelp.api_key}`,
-            'Content-Type': 'application/graphql'
-        },
-        data
-    })
-    .then(response => {
-        console.log(response.data.data.search.business);
-    })
-    .catch(error => {
-        console.log(error);
-    });
+    res.render('index');
+
+    // POST call to get Yelp listing using graphql API
+    // axios({
+    //     method: 'POST',
+    //     headers: {
+    //         'Authorization': `Bearer ${config.yelp.api_key}`,
+    //         'Content-Type': 'application/graphql'
+    //     },
+    //     data
+    // })
+    // .then(response => {
+    //     console.log(response.data.data.search.business);
+    // })
+    // .catch(error => {
+    //     console.log(error);
+    // });
 });
 
 

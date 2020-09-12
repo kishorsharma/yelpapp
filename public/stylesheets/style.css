@@ -1,8 +1,115 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
-  padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  padding: 0px;
+  margin: 0px;
 }
 
 a {
   color: #00B7FF;
+}
+
+#hero-container {
+    height: 293px;
+    position: relative;
+    background: #CCC;
+}
+
+#logo-container {
+    width: 263px;
+    height: 263px;
+    position: absolute;
+    top: 136px;
+    left: 90px;
+    border-radius: 10px;
+    box-shadow: 0 0 12px 3px rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
+}
+
+#main-container {
+    width: 100%;
+    margin-top: 200px;
+    padding: 0px 90px;
+}
+
+.title {
+    font-size: 34px;
+    color: #D32323;
+    display: inline-block;
+    line-height: 34px;
+}
+
+.title-category {
+    font-weight: bold;
+}
+
+#divider {
+  font-size: 31px;
+  color: #808080;
+  line-height: 34px;
+}
+
+#listing-container {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.list-card {
+    width: 380px;
+    height: 412px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 12px 3px rgba(0, 0, 0, 0.09);
+    background-color: #FFF;
+    overflow: hidden;
+}
+
+.list-image {
+    height: 166px;
+    background-color: #CCC;
+}
+
+.list-info {
+    margin: 15px;
+}
+
+.list-info-title {
+    margin-bottom: 5px;
+    font-size: 27px;
+    font-weight: bold;
+    letter-spacing: 2.16px;
+    color: #d32323;
+}
+
+.list-info-rating {
+    margin-bottom: 5px;
+    font-size: 17px;
+    letter-spacing: 2.16px;
+    color: #D32323;
+}
+
+.list-info-address {
+    margin-bottom: 20px;
+    font-size: 17px;
+    letter-spacing: 2.16px;
+    color: #666;
+}
+
+.review-user-name {
+    margin-bottom: 10px;
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 1.36px;
+    color: #666;
+}
+
+.review-user-text {
+    font-size: 13px;
+    letter-spacing: 1.04px;
+    color: #666;
 }

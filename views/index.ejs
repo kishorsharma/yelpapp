@@ -1,11 +1,39 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
+    <head>
+        <title>Yelp</title>
+        <link rel='stylesheet' href='/stylesheets/style.css' />
+    </head>
+    <body>
+        <!-- container for  banner and logo -->
+        <div id="hero-container">
+            <div id="logo-container">
+            </div>
+        </div>
+
+        <!--container for main listing -->
+        <div id="main-container">
+            <div id="main-content">
+                <div id="title-container">
+                    <span class="title title-category">Ice Cream Shops</span>
+                    <span id="divider"> | </span>
+                    <span class="title title-location">Redwood City</span>
+                </div>
+                <div id="listing-container">
+                    <div class="list-card">
+                        <div class="list-image"></div>
+                        <div class="list-info">
+                            <div class="list-info-title">Diggin</div>
+                            <div class="list-info-rating">4.5</div>
+                            <div class="list-info-address">Anand Lok</div>
+                            <div class="list-info-review">
+                                <div class="review-user-name">Kush Wadhwa</div>
+                                <div class="review-user-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna"</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
 </html>
