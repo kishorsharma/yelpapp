@@ -16,17 +16,27 @@ a {
     height: 293px;
     position: relative;
     background: #CCC;
+    background-image: url('../images/banner.jpg');
+    background-size: cover;
 }
 
 #logo-container {
     width: 263px;
     height: 263px;
     position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     top: 136px;
     left: 90px;
     border-radius: 10px;
     box-shadow: 0 0 12px 3px rgba(0, 0, 0, 0.2);
     background-color: #ffffff;
+}
+
+#logo-container > img {
+    width: 220px;
+    height: 111px;
 }
 
 #main-container {
