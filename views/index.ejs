@@ -22,11 +22,15 @@
                 </div>
                 <div id="listing-container">
                     <% businesses.forEach(function(business) { %>
+                        <!-- individual card for business listing -->
                         <div class="list-card">
                             <div class="list-image" style="background-image: url(<%= business.photos[0] %>)"></div>
                             <div class="list-info">
                                 <div class="list-info-title" title="<%= business.name %>"><%= business.name %></div>
-                                <div class="list-info-rating"><%= business.rating %></div>
+                                <div class="list-info-rating">
+                                    <span class="star-rating" data-rating="<%= business.rating %>"></span>
+                                    <%= business.rating %>
+                                </div>
                                 <div class="list-info-address"><%= business.location.address1 %>, <%= business.location.city %></div>
                                 <div class="list-info-review">
                                     <div class="review-user-name">
@@ -42,5 +46,6 @@
                 </div>
             </div>
         </div>
+        <script src="/javascripts/index.js"></script>
     </body>
 </html>
