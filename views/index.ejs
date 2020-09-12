@@ -21,18 +21,24 @@
                     <span class="title title-location">Redwood City</span>
                 </div>
                 <div id="listing-container">
-                    <div class="list-card">
-                        <div class="list-image"></div>
-                        <div class="list-info">
-                            <div class="list-info-title">Diggin</div>
-                            <div class="list-info-rating">4.5</div>
-                            <div class="list-info-address">Anand Lok</div>
-                            <div class="list-info-review">
-                                <div class="review-user-name">Kush Wadhwa</div>
-                                <div class="review-user-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna"</div>
+                    <% businesses.forEach(function(business) { %>
+                        <div class="list-card">
+                            <div class="list-image" style="background-image: url(<%= business.photos[0] %>)"></div>
+                            <div class="list-info">
+                                <div class="list-info-title" title="<%= business.name %>"><%= business.name %></div>
+                                <div class="list-info-rating"><%= business.rating %></div>
+                                <div class="list-info-address"><%= business.location.address1 %>, <%= business.location.city %></div>
+                                <div class="list-info-review">
+                                    <div class="review-user-name">
+                                        <%= business.reviews[0].user.name %>
+                                        <span class="rated">rated</span>
+                                        <span class="review-user-rating"><%= business.reviews[0].rating %></span>
+                                    </div>
+                                    <div class="review-user-text">"<%= business.reviews[0].text %>"</div>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    <% }) %>
                 </div>
             </div>
         </div>

@@ -82,6 +82,8 @@ a {
 .list-image {
     height: 166px;
     background-color: #CCC;
+    background-size: cover;
+    background-position: center;
 }
 
 .list-info {
@@ -93,7 +95,11 @@ a {
     font-size: 27px;
     font-weight: bold;
     letter-spacing: 2.16px;
-    color: #d32323;
+    color: #D32323;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .list-info-rating {
@@ -116,6 +122,27 @@ a {
     font-weight: 600;
     letter-spacing: 1.36px;
     color: #666;
+}
+
+.rated {
+    font-size: 17px;
+    font-weight: normal;
+    letter-spacing: 1.36px;
+    color: #666;
+}
+
+.review-user-rating {
+    width: 30px;
+    height: 18px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 8.5px;
+    background-color: #A0A0A0;
+    color: #FFF;
+    font-size: 11px;
+    letter-spacing: 0.88px;
+    line-height: 18px;
+    vertical-align: middle;
 }
 
 .review-user-text {
