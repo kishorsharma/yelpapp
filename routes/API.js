@@ -5,19 +5,19 @@ const yelp = require('../services/yelp');
 /* GET home page. */
 router.get('/', function(req, res, next) {
 
-    const location = 'Redwood City';
+    const location = 'Redwood City'
+
     yelp.getBusinesses({
         location,
         categories: 'icecream',
         limit: 10,
-        sort_by: 'rating',
+        sort_by: 'rating'
     })
     .then(businesses => {
-        res.render('index', { businesses, location });
+        res.status(200).send({ success: true, result: { businesses, location } });
     })
     .catch(error => {
-        console.log(error);
-        res.render('error', { message: 'Something Went Wrong!', error })
+        res.status(500).send({ message: 'Something Went Wrong!', error })
     });
 });
 

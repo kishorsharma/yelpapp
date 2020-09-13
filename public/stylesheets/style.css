@@ -46,7 +46,7 @@ a {
 }
 
 .title {
-    font-size: 34px;
+    font-size: 28px;
     color: #D32323;
     display: inline-block;
     line-height: 34px;
@@ -96,8 +96,8 @@ a {
 }
 
 .list-info-title {
-    margin-bottom: 5px;
-    font-size: 27px;
+    margin-bottom: 7.5px;
+    font-size: 20px;
     font-weight: bold;
     letter-spacing: 2.16px;
     color: #D32323;
@@ -108,7 +108,7 @@ a {
 }
 
 .list-info-rating {
-    margin-bottom: 5px;
+    margin-bottom: 7.5px;
     font-size: 17px;
     letter-spacing: 2.16px;
     color: #D32323;
@@ -125,7 +125,7 @@ a {
 }
 
 .list-info-address {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     font-size: 17px;
     letter-spacing: 2.16px;
     color: #666;
