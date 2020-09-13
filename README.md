@@ -30,14 +30,14 @@ npm install
 
 ## Usage
 
-```
-# Starts the application on port 8080
+```bash
+#Starts the application on port 8080
 npm start
 
-# Open the url in your favorite browser to view the webpage
+#Open the url in your favorite browser to view the webpage
 http://location:8080
 
-# API endpoint for the mobile app
+#API endpoint for the mobile app
 http://localhost:8080/api
 ```
 
@@ -45,4 +45,4 @@ http://localhost:8080/api
 ![Screenshot](./screenshot.png)
 
 ## Demo
-[Demo](https://www.loom.com/share/a44dc70b584b47d1a30ab31010a9b6d7)
+[Demo]x(https://www.loom.com/share/a44dc70b584b47d1a30ab31010a9b6d7)
