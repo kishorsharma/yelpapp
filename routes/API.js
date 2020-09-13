@@ -9,9 +9,9 @@ router.get('/', function(req, res, next) {
 
     yelp.getBusinesses({
         location,
-        categories: 'icecream',
         limit: 10,
-        sort_by: 'rating'
+        sort_by: 'rating',
+        categories: 'icecream'
     })
     .then(businesses => {
         res.status(200).send({ success: true, result: { businesses, location } });
